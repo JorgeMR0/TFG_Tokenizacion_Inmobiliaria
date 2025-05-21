@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5977796ebe6bcb040365ded7b35c85f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5977796ebe6bcb040365ded7b35c85f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5977796ebe6bcb040365ded7b35c85f3 = L.map(
+                "map_5977796ebe6bcb040365ded7b35c85f3",
+                {
+                    center: [40.5, -3.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ccabf8d150f8845db3c135cb8c49656 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0ccabf8d150f8845db3c135cb8c49656.addTo(map_5977796ebe6bcb040365ded7b35c85f3);
+        
+    
+            var marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_e5d9798e32ae1aa4c421ff5f1a4ce837 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888);
+        
+    
+            var icon_722161af2050f0d2b4860ecb6d63b706 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24ec7e564a0dd57128059d86abcffa96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5f9d057f5fe0fca6163e526dc014469 = $(`<div id="html_c5f9d057f5fe0fca6163e526dc014469" style="width: 100.0%; height: 100.0%;">Ciudad: Madrid<br>PRICE: 200000 €<br>UNITPRICE: 0.8 €/m²<br>Cluster PRICE: 1<br>Cluster UNITPRICE: 0</div>`)[0];
+                popup_24ec7e564a0dd57128059d86abcffa96.setContent(html_c5f9d057f5fe0fca6163e526dc014469);
+            
+        
+
+        marker_e5d9798e32ae1aa4c421ff5f1a4ce837.bindPopup(popup_24ec7e564a0dd57128059d86abcffa96)
+        ;
+
+        
+    
+    
+                marker_e5d9798e32ae1aa4c421ff5f1a4ce837.setIcon(icon_722161af2050f0d2b4860ecb6d63b706);
+            
+    
+            var marker_1f18a643017634f49c98b223d3dee3e4 = L.marker(
+                [40.417, -3.7036],
+                {
+}
+            ).addTo(marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888);
+        
+    
+            var icon_bba90925476df58d7373d66fa077c9ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_725d280425473f8fc571fbb06751bda8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2f5d4d821c3fb3c982c733611adfdc3 = $(`<div id="html_f2f5d4d821c3fb3c982c733611adfdc3" style="width: 100.0%; height: 100.0%;">Ciudad: Madrid<br>PRICE: 220000 €<br>UNITPRICE: 0.6 €/m²<br>Cluster PRICE: 1<br>Cluster UNITPRICE: 1</div>`)[0];
+                popup_725d280425473f8fc571fbb06751bda8.setContent(html_f2f5d4d821c3fb3c982c733611adfdc3);
+            
+        
+
+        marker_1f18a643017634f49c98b223d3dee3e4.bindPopup(popup_725d280425473f8fc571fbb06751bda8)
+        ;
+
+        
+    
+    
+                marker_1f18a643017634f49c98b223d3dee3e4.setIcon(icon_bba90925476df58d7373d66fa077c9ed);
+            
+    
+            var marker_20324dc2cebca9d70c6f6edd8b590eae = L.marker(
+                [39.4699, -0.3763],
+                {
+}
+            ).addTo(marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888);
+        
+    
+            var icon_6ddb007021ec61ac4a534541fb02bdc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_116bcfa987ba456f1995ef636b6a449e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7595f7c53176f0f6c179a112c5b8386 = $(`<div id="html_b7595f7c53176f0f6c179a112c5b8386" style="width: 100.0%; height: 100.0%;">Ciudad: Valencia<br>PRICE: 180000 €<br>UNITPRICE: 0.4 €/m²<br>Cluster PRICE: 0<br>Cluster UNITPRICE: 1</div>`)[0];
+                popup_116bcfa987ba456f1995ef636b6a449e.setContent(html_b7595f7c53176f0f6c179a112c5b8386);
+            
+        
+
+        marker_20324dc2cebca9d70c6f6edd8b590eae.bindPopup(popup_116bcfa987ba456f1995ef636b6a449e)
+        ;
+
+        
+    
+    
+                marker_20324dc2cebca9d70c6f6edd8b590eae.setIcon(icon_6ddb007021ec61ac4a534541fb02bdc3);
+            
+    
+            var marker_d04a694f05c86c2caf14b3fb0a2e9a80 = L.marker(
+                [39.4701, -0.3761],
+                {
+}
+            ).addTo(marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888);
+        
+    
+            var icon_c565b0263e6901c1abf2be3484fea9b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee1e1f5409a656cb4a9361ad2c3e875c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cd09e19a55707a90445904697deb0a8 = $(`<div id="html_5cd09e19a55707a90445904697deb0a8" style="width: 100.0%; height: 100.0%;">Ciudad: Valencia<br>PRICE: 250000 €<br>UNITPRICE: 0.9 €/m²<br>Cluster PRICE: 1<br>Cluster UNITPRICE: 2</div>`)[0];
+                popup_ee1e1f5409a656cb4a9361ad2c3e875c.setContent(html_5cd09e19a55707a90445904697deb0a8);
+            
+        
+
+        marker_d04a694f05c86c2caf14b3fb0a2e9a80.bindPopup(popup_ee1e1f5409a656cb4a9361ad2c3e875c)
+        ;
+
+        
+    
+    
+                marker_d04a694f05c86c2caf14b3fb0a2e9a80.setIcon(icon_c565b0263e6901c1abf2be3484fea9b7);
+            
+    
+            var marker_027b644ef4bc80df34c890634a436485 = L.marker(
+                [41.3851, 2.1734],
+                {
+}
+            ).addTo(marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888);
+        
+    
+            var icon_6092752574c4add46093481a442fbd42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c1a9c33d555a3083031c5a24e85c638 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d3c7f2bd3fd0e6e3a41e7fca9e1d82d = $(`<div id="html_4d3c7f2bd3fd0e6e3a41e7fca9e1d82d" style="width: 100.0%; height: 100.0%;">Ciudad: Barcelona<br>PRICE: 300000 €<br>UNITPRICE: 0.5 €/m²<br>Cluster PRICE: 2<br>Cluster UNITPRICE: 0</div>`)[0];
+                popup_3c1a9c33d555a3083031c5a24e85c638.setContent(html_4d3c7f2bd3fd0e6e3a41e7fca9e1d82d);
+            
+        
+
+        marker_027b644ef4bc80df34c890634a436485.bindPopup(popup_3c1a9c33d555a3083031c5a24e85c638)
+        ;
+
+        
+    
+    
+                marker_027b644ef4bc80df34c890634a436485.setIcon(icon_6092752574c4add46093481a442fbd42);
+            
+    
+            var marker_a5ad5d7913582bdb536b748be786031d = L.marker(
+                [41.3853, 2.1736],
+                {
+}
+            ).addTo(marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888);
+        
+    
+            var icon_0d67eea1c35bb9915b83b8468264952f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a002f69f92aaccda14244d83672471ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13943bebdfd61666caefc7200d023c65 = $(`<div id="html_13943bebdfd61666caefc7200d023c65" style="width: 100.0%; height: 100.0%;">Ciudad: Barcelona<br>PRICE: 310000 €<br>UNITPRICE: 0.7 €/m²<br>Cluster PRICE: 2<br>Cluster UNITPRICE: 1</div>`)[0];
+                popup_a002f69f92aaccda14244d83672471ce.setContent(html_13943bebdfd61666caefc7200d023c65);
+            
+        
+
+        marker_a5ad5d7913582bdb536b748be786031d.bindPopup(popup_a002f69f92aaccda14244d83672471ce)
+        ;
+
+        
+    
+    
+                marker_a5ad5d7913582bdb536b748be786031d.setIcon(icon_0d67eea1c35bb9915b83b8468264952f);
+            
+    
+            marker_cluster_17ef09e3c741d65a8cd8c046b3dd0888.addTo(map_5977796ebe6bcb040365ded7b35c85f3);
+        
+</script>
+</html>
